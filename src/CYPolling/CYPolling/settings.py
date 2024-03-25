@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-# Activate as False when real people / strangers are using site! 
+# # Activate as False when real people / strangers are using site! 
 DEBUG = True
 
 ALLOWED_HOSTS = []
@@ -38,6 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    # personally create apps:
+    'products', 
 ]
 
 MIDDLEWARE = [
