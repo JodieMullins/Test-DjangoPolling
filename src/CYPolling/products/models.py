@@ -9,7 +9,7 @@ from django.db import models
 #  #        python manage.py makemigrations and python manage.py migrate when altered!!!! 
 
 class Product(models.Model):
-    title       = models.TextField()
-    description = models.TextField()
-    salary      = models.TextField()
-    rating      = models.TextField(default='3')
+    title       = models.CharField(max_length=120)  # max length is  R E Q U I R E D 
+    description = models.TextField(blank=True, null=True)
+    salary      = models.IntegerField()
+    rating      = models.PositiveSmallIntegerField() # 32767 #default='3'
