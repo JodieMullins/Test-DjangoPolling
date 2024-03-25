@@ -5,9 +5,8 @@ from django.db import models
 # # We want these mapped to database
 # #  Must inherit Model from models
 
-#Going to map to the database
-
 class Product(models.Model):
     title       = models.TextField()
     description = models.TextField()
     price       = models.TextField()
+    rating      = models.TextField(default='3')
