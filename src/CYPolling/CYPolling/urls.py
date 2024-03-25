@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+# #  NOW WE NEED TO INCLUDE OUR PERSONAL CUSTOM PAGES
+from pages import views
+
 urlpatterns = [
+    path('', views.homepage_view, name='home'), # # added custom homepage
     path('admin/', admin.site.urls),
 ]

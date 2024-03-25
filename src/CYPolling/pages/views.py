@@ -1,3 +1,6 @@
+# added to turn function for custom homepage into DJANGO friendly code
+from django.http import HttpResponse
+
 from django.shortcuts import render
 
 # Create your views here.
@@ -7,5 +10,9 @@ from django.shortcuts import render
 # Functions or classes
 
 # define home page
-def homepage_view():
-    return '<h1>Hello World</h1>'
+def homepage_view(*args, **kwargs):
+    return HttpResponse("<h1>Hello World</h1>")
+
+
+
+# MUST TURN INTO DJANGO FRIENDLY CODE >>> IMPORT httpresponse >> wrap in HttpResponse
