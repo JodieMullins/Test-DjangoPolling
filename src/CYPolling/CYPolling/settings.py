@@ -59,7 +59,7 @@ ROOT_URLCONF = 'CYPolling.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [Path(__file__).resolve().parent.parent],               # # # THIS IS WHERE THE VIDEO BEING FOUR YEARS OLD DOESN'T HELP ME TODAY
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
