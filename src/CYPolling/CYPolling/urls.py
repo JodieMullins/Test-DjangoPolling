@@ -18,9 +18,14 @@ from django.contrib import admin
 from django.urls import path
 
 # #  NOW WE NEED TO INCLUDE OUR PERSONAL CUSTOM PAGES
-from pages import views
+#from pages import views
+from pages.views import home_view
+
+#NOW ADD THE OTHER PAGE
+from pages.views import homepage_view, contact_View
 
 urlpatterns = [
     path('', views.homepage_view, name='home'), # # added custom homepage
+    path('contact/', contact_view), # # added custom page
     path('admin/', admin.site.urls),
 ]

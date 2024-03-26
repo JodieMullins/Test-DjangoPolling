@@ -16,3 +16,9 @@ def homepage_view(*args, **kwargs):
 
 
 # MUST TURN INTO DJANGO FRIENDLY CODE >>> IMPORT httpresponse >> wrap in HttpResponse
+
+
+# CREATING MORE PAGES
+
+def contact_View(*args, **kawrgs):
+    return HttpResponse("<h1>Contact Page</h1>")
